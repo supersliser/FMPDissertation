@@ -1,5 +1,9 @@
-\documentclass{apa}
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
 
 \usepackage[backend=biber, style=apa, sorting=nyt]{biblatex}
 \addbibresource[]{ref.bib}
@@ -10,14 +14,29 @@
 \graphicspath{{./images/}}
 
 \title{Archaos}
-\authoraffiliation{Bournemouth University \\ National Centre for Computer Animation}
-\author{Thomas Lower}
-
+\author{Thomas Lower\\
+\textit{Collaborating with}\\
+Jacques Moss\\
+\textit{Supervised by}\\
+Dr. Leigh McLoughlin}
 \date{May 2026}
 
 \begin{document}
 
 \maketitle
+
+\begin{abstract}
+    This project is an attempt at creating a game which is able to create a distinction between the genres of Science Fiction and Medieval Fantasy, two sub-genres both covered the the overarching genre Fantasy. This paper acts will act as the analysis of the intended effects created within the project and how well they were achieved. This will focus on the specifics of the spells themselves, as well as the various technical components of the project as this reflected my role within said project.
+
+    The project itself also sought to explore alternative control methods within games, with many of similar genres focusing on simple point and click mechanics, this game sought to require the user to actually control their wand in some way in order to cast their spells. This paper will explore how well this was achieved and the various methods used to implement this.
+\end{abstract}
+
+\pagebreak
+
+\section*{Acknowledgements}
+I would like to thank Jacques Moss for his work and collaboration on this project, as well as the initial idea which we developed. 
+
+I would also like to thank Dr. Leigh McLoughlin for his supervision and guidance throughout the project.
 
 \pagebreak
 
@@ -25,11 +44,34 @@
 
 \pagebreak
 
-\section{Introduction} \label{sec:intro}
-
-
+\listoffigures
 
 \pagebreak
+
+\listoftables
+
+\pagebreak
+
+\section{Glossary}
+\begin{itemize}
+        \item First Person Shooter (FPS): A genre of game focused on gun and projectile combat from a first-person perspective. \parencite{elias2009first}
+        \item Science Fiction (Sci-Fi): A genre of fantasy and fiction which focuses on the future and advanced technology. Often utilising the generic conventions of space travel, advanced weaponry and technology and logical, deterministic explanations for phenomena. \parencite{yarlagaddafantasy}.
+        \item Medieval Fantasy: A genre of fantasy which focuses on an idealised representation of the historcal medieval period. Often featuring the generic conventions of magic, mythical creatures and feudal societies.
+\end{itemize}
+
+\pagebreak
+
+\chapter{The Fiction Genres, a review of how subgenres are separated}
+
+\section{Introduction to the Fantasy Genre}
+
+The first goal of this project was to create a game which challenges the way in which fantasy is portrayed within video games, specifically the way mechanics function within said games.
+
+*At some point mention that a difference between science fiction and fantasy is that science fiction should be held to be within the realms of possibility as it is within the future and based in science, while fantasy can be entirely separated from reality due to proof that it didnt happen \cite{long2011defining}
+
+\chapter{Spells and their design}
+
+\chapter{How to hold a wand, a study of controls within games}
 
 \printbibliography
 
