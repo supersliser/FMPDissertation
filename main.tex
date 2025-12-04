@@ -3,6 +3,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage[toc, acronym]{glossaries}
 \doublespacing
 
 \usepackage[backend=biber, style=apa, sorting=nyt]{biblatex}
@@ -21,12 +22,17 @@ Jacques Moss\\
 Dr. Leigh McLoughlin}
 \date{May 2026}
 
+
+\makeglossaries
+\loadglsentries{glossary}
+
 \begin{document}
 
 \maketitle
 
+\addcontentsline{toc}{chapter}{Abstract}
 \begin{abstract}
-    This project is an attempt at creating a game which is able to create a distinction between the genres of Science Fiction and Medieval Fantasy, two sub-genres both covered the the overarching genre Fantasy. This paper acts will act as the analysis of the intended effects created within the project and how well they were achieved. This will focus on the specifics of the spells themselves, as well as the various technical components of the project as this reflected my role within said project.
+    This project is an attempt at creating a \gls{fps} game which is able to create a distinction between the genres of \gls{scifi} and \gls{fantasy}, two sub-genres both covered the the overarching genre Fiction. This paper acts will act as the analysis of the intended effects created within the project and how well they were achieved. This will focus on the specifics of the spells themselves, as well as the various technical components of the project as this reflected my role within said project.
 
     The project itself also sought to explore alternative control methods within games, with many of similar genres focusing on simple point and click mechanics, this game sought to require the user to actually control their wand in some way in order to cast their spells. This paper will explore how well this was achieved and the various methods used to implement this.
 \end{abstract}
@@ -34,9 +40,9 @@ Dr. Leigh McLoughlin}
 \pagebreak
 
 \section*{Acknowledgements}
-I would like to thank Jacques Moss for his work and collaboration on this project, as well as the initial idea which we developed. 
+I would like to thank Jacques Moss for his work and collaboration on this project, as well as the initial idea which we developed.
 
-I would also like to thank Dr. Leigh McLoughlin for his supervision and guidance throughout the project.
+I would also like to thank Dr. Leigh McLoughlin for his supervision and guidance throughout the project. As well as his help with expanding our initial concept.
 
 \pagebreak
 
@@ -46,24 +52,9 @@ I would also like to thank Dr. Leigh McLoughlin for his supervision and guidance
 
 \listoffigures
 
-\pagebreak
-
 \listoftables
 
-\pagebreak
-
-\section{Glossary}
-\paragraph{First Person Shooter (FPS)}\label{glos:fps}
-A genre of game focused on gun and projectile combat from a first-person perspective.\cite{elias2009first}
-
-\paragraph{Science Fiction}\label{glos:scifi}
-A genre of fantasy and fiction which focuses on the future and advanced technology. Often utilising the generic conventions of space travel, advanced weaponry and technology and logical, deterministic explanations for phenomena. \cite{yarlagaddafantasy}
-
-\paragraph{Medieval Fantasy}\label{glos:fantasy}
-genre of fantasy which focuses on an idealised representation of the historcal medieval period. Often featuring the generic conventions of magic, mythical creatures and feudal societies.
-
-\paragraph{Todorovian Narrative}\label{glos:todorov}
-style of narrative structure which features 5 main states that appear in a particular sequence: Establishing equilibrium, event of change, state of disequilibrium, event of repair, improved equilibrium. \cite{todorov19712}
+\printglossaries
 
 \pagebreak
 
@@ -71,19 +62,39 @@ style of narrative structure which features 5 main states that appear in a parti
 
 \section{An introduction to active storytelling}
 
-A source of entertainment must be experienced in order for it to entertain. A way in which a given text can be categorised is based on how it entertains the audience. It could either be: passive, in which it provides an experience which does not directly change based on the audiences own thoughts or actions. Or it could be interactive (or active for short). This is where the audience is able to effect the events that occur within the story by making choices \parencite{heinderyckx2013praise}. One of the defining facts of a video game is that it is interactive, the audience is able to interact with the game and assist with its storytelling. This is not to say that all games are required to have a narrative, as some rely on entertainment without a clear story or todorovian narrative structure (see \ref{glos:todorov}). Whether a narrative is present or not, the feeling and effect of a game is omni-present throughout the gameplay, as it would be throughout a passive medium such as film or literature, every aspect has a direct impact on the feeling that the text creates, let alone its defining characteristics. As I mentioned earlier, the primary use of a video game is that it is interactive, meaning that the effect can exist as something that is simply experienced such as graphics or audio, but also in the form of the logic behind the game. What the player is able to cause to occur within the game is an good use of the video game medium. This is confirmed time and time again when considering narrative in the context of a video game \parencite{somerdin2016game} \parencite{jones2008narrative} \parencite{lebowitz2011interactive}. As such, we feel that it is essential for us to define the setting within the mechanics of the game itself, rather than simply relying on traditional narrative technologies (relying on the visuals and audio of the game).
+A source of entertainment must be experienced in order for it to entertain. A way in which a given text can be categorised is based on how it entertains the audience. It could either be: passive, in which it provides an experience which does not directly change based on the audiences own thoughts or actions. Or it could be interactive (or active for short). This is where the audience is able to effect the events that occur within the story by making choices \parencite{heinderyckx2013praise}. One of the defining facts of a video game is that it is interactive, the audience is able to interact with the game and assist with its storytelling. This is not to say that all games are required to have a narrative, as some rely on entertainment without a clear story or \gls{todorov}. Whether a narrative is present or not, the feeling and effect of a game is omni-present throughout the gameplay, as it would be throughout a passive medium such as film or literature, every aspect has a direct impact on the feeling that the text creates, let alone its defining characteristics.
+
+As I mentioned earlier, the primary use of a video game is that it is interactive, meaning that the effect can exist as something that is simply experienced such as graphics or audio, but also in the form of the logic behind the game. What the player is able to cause to occur within the game is an good use of the video game medium. This is confirmed time and time again when considering narrative in the context of a video game \parencite{somerdin2016game} \parencite{jones2008narrative} \parencite{lebowitz2011interactive}. As such, we feel that it is essential for us to define the setting within the mechanics of the game itself, rather than simply relying on traditional narrative technologies (the visuals and audio of the game).
 
 \section{The intended effect}
 
-The setting of \textbf{Archaos} is that of medieval fantasy. Thus we wished for the games mechanics to feature something that would demonstrate this, such that the games core gameplay would not make sense in any other setting. Our main point of comparison was the science fiction setting as this represents a future setting, while medieval fantasy represents a historical point of view.
+The setting of \textbf{Archaos} is that of \gls{fantasy}, thus we wished for the games mechanics to reflect this this. We sought the games core gameplay would not make sense in any other setting. That it would be entirely unique to our choice of setting. Our main point of comparison was the \gls{scifi} setting as this represents a future setting, while \gls{fantasy} represents a more historical point of view.
+
+One of the key differences between these 2 settings is the way in which they present innovation and strength. \gls{scifi} puts emphasis on technology, taking things that do or could exist and utilising them for practical benefit (whether the benefit of the individual or the society). It is worth noting that, these technologies and technical innovations are necessitated to hold a sense of plausability. Meaning that the audience must be able to believe that this could be possible within our own reality, and that our current scientific framework could be expanded to include what is presented to us by the text. \parencite{long2011defining}.
+
+In contrast to such, a \gls{fantasy} leans towards magic as a replacement for innovation. As discussed by \cite{carver2024duality} such magic can exist in 2 forms, hard magic or soft magic. Where hard magic is bound by strict rules that are explained clearly to the audience, soft magic is left in the realm of mystery, suggesting that whatever the audience sees of it, is merely a fragment of imagination. Thus it could be said that the difference between the 2 is a matter of approach to magic, or rather, how it is approached by someone who hasn't yet mastered it.
+
+However, with this, there is an issue. As was once said by \cite{clarke1973profiles} ``Any sufficiently advanced technology is indistinguishable from magic.''. This quote highlights an important consideration, how can one differentiate science from magic? If you were to remove any other convention that could be used to understand the setting, how would you tell the difference between magic and technology.
+
+\section{How others have differentiated}
 
 
+
+
+
+*within the lore we make reference to the difference between hard and soft magic by comparing it to the difference between wizards and witches.
 *At some point mention that a difference between science fiction and fantasy is that science fiction should be held to be within the realms of possibility as it is within the future and based in science, while fantasy can be entirely separated from reality due to proof that it didn't happen \cite{long2011defining}
 
 \chapter{Spells and their design}
 
 \chapter{How to hold a wand, a study of controls within games}
 
+mention that we broke free from hard vs soft magic
+
 \printbibliography
+
+\appendix
+\chapter{Lore document for Archaos}
+\input{}
 
 \end{document}
