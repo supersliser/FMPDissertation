@@ -1,0 +1,3 @@
+[submodule "wizardgame"]
+	path = wizardgame
+	url = git@github.com:deathsincarnate/wizardgame
