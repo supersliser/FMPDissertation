@@ -10,6 +10,7 @@
 \addbibresource[]{ref.bib}
 \usepackage{wrapfig}
 \usepackage{subcaption}
+\captionsetup[subfigure]{list=true}
 \usepackage{float}
 
 \graphicspath{{./images/}}
@@ -82,7 +83,7 @@ However, with this, there is an issue. As was once said by \cite{clarke1973profi
 
 Destiny 2 is an \gls{fps} video game set in a post-apocalyptic future in which a giant ball in the sky (nicknamed ``The Traveller'') is able to resurrect people with magical powers. Due to the futuristic setting, the game makes use of both \gls{scifi} and \gls{fantasy} elements. Furthermore, the game mostly relies on audio to differentiate the 2. Visually they both use similar \gls{vfx} with only a change in colour to denote element. However, the game makes use of very different \gls{timbre} for effects intended to be from the modern setting, as apposed to the more magical audio used during the more mystical actions. This goes to show that audio is a very key part of separating different game settings. As if used properly, multiple settings can even be used in the same situation.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Stormcaller_Annotated.png}
     \caption{Ability menu for the ``Stormcaller'' subclass in Destiny 2. Image courtesy of \cite{ign2017stormcaller}.}
@@ -100,33 +101,40 @@ The reference points for figure \ref{destinyAbilities} are as follows:
 
 In terms of actual gameplay, a player has guns as their primary combat method, with 5 abilities available on \gls{cooldown} as visible in \ref{destinyAbilities}. A grenade, a melee ability, a ``class ability'', ``movement ability'' and a ``super ability''. All of these make use of some form of magical ability and as such, this is how Destiny 2 creates a separation between the arcane and the scientific within its own gameplay. By simply splitting the uses such that \textit{primary} attack methods are scientific and modern, while \textit{secondary abilities} are used for more fantastical and magical abilities.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.3\textwidth}
-        \includegraphics{healingRift.jpg}
+        \includegraphics[width=\textwidth]{healingRift.jpg}
         \caption{The ``Healing Rift'' ability from Destiny 2 with the ``Stasis'' effect applied to nearby enemies. Image courtesy of \cite{destinybulletin_tweet}.}
         \label{classAbility}
     \end{subfigure}
+    \hfill
     \begin{subfigure}{0.3\textwidth}
-        \includegraphics{Pulse_Grenade.jpg}
-        \caption{The ``Pulse Grenade'' from Destiny 2 mid-detonation. Image courtesy of \cite{destinybulletin_tweet}}
-        \label{grenadeAbility}
-    \end{subfigure}
-    \begin{subfigure}{0.3\textwidth}
-        \includegraphics{400px-Strafe_Glide_banner.jpg}
-        \caption{The ``Strafe Glide'' from Destiny 2. Image courtesy of \cite{destinygamewiki_strafe}}
-        \label{strafeGlideAbility}
-    \end{subfigure}
-    \begin{subfigure}{0.3\textwidth}
-        \includegraphics{Stormcaller-Subclass-Enhanced-Destiny-2.jpeg}
+        \includegraphics[width=\textwidth]{Stormcaller-Subclass-Enhanced-Destiny-2.jpeg}
         \caption{The ``Stormcaller Super'' ability from Destiny 2. Image courtesy of \cite{blueberries_stormcaller}}
         \label{warlockSuperAbility}
     \end{subfigure}
+    \hfill
     \begin{subfigure}{0.3\textwidth}
-        \includegraphics{d05a30b4a66c-destiny-2-stormcaller.jpg}
+        \includegraphics[width=\textwidth]{d05a30b4a66c-destiny-2-stormcaller.jpg}
         \caption{The ``Gale Force'' melee ability from Destiny 2. Image courtesy of \cite{altchar_stormcaller}}
         \label{warlockMeleeAbility}
     \end{subfigure}
+
+    \vspace{1em}
+
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Pulse_Grenade.jpg}
+        \caption{The ``Pulse Grenade'' from Destiny 2 mid-detonation. Image courtesy of \cite{destinybulletin_tweet}}
+        \label{grenadeAbility}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{400px-Strafe_Glide_banner.jpg}
+        \caption{The ``Strafe Glide'' from Destiny 2. Image courtesy of \cite{destinygamewiki_strafe}}
+        \label{strafeGlideAbility}
+    \end{subfigure}
+    \caption{Images displaying the various art style for the ``Arc'' ability for the ``Warlock'' class of Destiny 2}
 \end{figure}
 
 \subsection{Witchfire} \label{witchfire}
@@ -136,14 +144,33 @@ In terms of actual gameplay, a player has guns as their primary combat method, w
 Witchfire is an \gls{fps} video game set in a \gls{fantasy} setting in which the pope is sending witch hunters (the player) to hunt witches in distant isles. The game mostly utilises guns with spells being seen as secondary abilities (similar to Destiny 2 in \ref{destiny}). There are 3 primary differences between how the 2 texts present the arcane:
 
 \begin{itemize}
-
     \item Firstly, Destiny relies on a multi-setting situation to provide the separation while Witchfire fully embraces the medieval setting, as such, all guns have some form of magical ability, while this is only true for some guns in the case of Destiny 2.
-
-    \item Secondly, Destiny 2 divides its abilities into 4 clear categories with clear and distinct mechanics and use cases. A grenade ability is a throwable explosive while a melee ability is applied to a nearby target by making physical contact. However, Witchfire only uses a similar categorisation to determine mechanical impact and \gls{cooldown}, where minor arcana is less powerful but faster to use, while the inverse is true for major arcana.
-
-    \item Finally, major arcana spells are much more mechanically complex. For example, one such spell creates a mystical bell in the air which stuns all nearby enemies when it is shot with a gun (causing it to ring out).
-
+    \item Secondly, Destiny 2 divides its abilities into 4 clear categories with clear and distinct mechanics and use cases (as visible in figure \ref{destinyAbilities}). A grenade ability is a throwable explosive while a melee ability is applied to a nearby target by making physical contact. However, Witchfire only uses a similar categorisation to determine magnitude and \gls{cooldown}, where light spells are less powerful but faster to use, while the inverse is true for heavy spells (as visible in the graphical difference visible in figure \ref{witchfireComparison}).
+    \item Finally, heavy spells are much more mechanically complex. For example, one such spell creates a mystical bell in the air (example available in figure \ref{cursedBell}) which stuns all nearby enemies when it is shot with a gun (causing it to ring out).
 \end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.49\textwidth}
+        \includegraphics[width=\textwidth]{lightspell.jpg}
+        \caption{A light spell being cast from the players' perspective. Image Courtesy of \cite{techraptor2023witchfire}}
+        \label{witchfireLight}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \includegraphics[width=\textwidth]{lightningcross.jpg}
+        \caption{A heavy spell having been cast and attacking multiple enemies. Image Courtesy of \cite{ironcrossImage}}
+        \label{witchfireHeavy}
+    \end{subfigure}
+    \caption{An example of a light spell (\ref{witchfireLight}) vs a heavy spell (\ref{witchfireHeavy})}
+    \label{witchfireComparison}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{the-cursed-bell-heavy-spell-is-cool-af-fight-me-sure-it-v0-NmFiNHA3djR4YnVkMboSYxLg8OeyeM-LAnlavryQJSYNOaik1jwcXqH2BRkI.png}
+    \caption{An image of the ``Cursed Bell'' heavy spell. Image Courtesy of \cite{reddit2024cursedbell}}
+    \label{cursedBell}
+\end{figure}
 
 Its the final point which intrigues me mostly, as this is what I believe will be more impactful in the long term on a prospective audience. This is what will make a game stand out, rather than the visuals of the magical abilities.
 
@@ -163,7 +190,7 @@ Another useful difference of which we were able to exploit is the difference in 
 
 Largely, the intention described in \ref{method1} is successful. However, there is 1 key factor that is not considered. The \textit{fun} factor. You see, within our description, we analysed how to create a believable setting, but did not yet consider how this equates to creating a fun game. This is incredibly problematic for a video game especially as these thrive almost purely on the existence of fun within the text.
 
-As can be seen in many recent submissions to the medium (\cite{bungie2017destiny2} and \cite{ea2017battlefront2} \footnote{it is worth noting that much of the distaste towards this games use of randomness is from their \textit{lootbox} system which caused young children to essentially gamble money to gain mechanical benefits for use within the game.}), overuse of randomisation within a game can rapidly reduce the \textit{fun} created by a game. This relates back to the original definition defined in \ref{intro1}. In this we stated that the purpose of the video game medium is that the player is able to make choices which directly impact what goes on within the game, the text is in their control. By introducing randomness, you force the player to relinquish some level of control to the text itself, thus bringing into question the purpose of the text being a game in the first place. As such, randomness should be used sparingly within a video game to enable the player to have some level of control over their actions.
+As can be seen in many recent submissions to the medium (\cite{bungie2017destiny2} and \cite{ea2017battlefront2} \footnote{it is worth noting that much of the distaste towards this games use of randomness is from their \textit{lootbox} system which caused young children to essentially gamble money to gain mechanical benefits for use within the game. This is usually referred to as a ``Pay to win'' system}), overuse of randomisation within a game can rapidly reduce the \textit{fun} created by a game. This relates back to the original definition defined in \ref{intro1}. In this we stated that the purpose of the video game medium is that the player is able to make choices which directly impact what goes on within the game, the text is in their control. By introducing randomness, you force the player to relinquish some level of control to the text itself, thus bringing into question the purpose of the text being a game in the first place. As such, randomness should be used sparingly within a video game to enable the player to have some level of control over their actions.
 
 \section{Conclusion} \label{conclusion1}
 
@@ -171,7 +198,7 @@ Ultimately, the use of chaos within the mechanics of a game is largely down to a
 
 \chapter{Spells and their design}
 
-The basis of the idea for our game was an \gls{fps} game, but with spells rather than guns. As such, the design of these spells, as well as the logic behind them and their implementation within the technical side of the game itself is a core component for the games' success. The logic behind the design of our spells can be understood in 2 ways, the 'Spell Type' (see \ref{spellType}) and the 'Element' (see \ref{elements}). This will provide insight into the artistic design of the spells, while \ref{modularSpells} will provide understanding regarding the implementation and impact on the gameplay of the game.
+The basis of the idea for our game was an \gls{fps} game, but with spells rather than guns. As such, the design of these spells, as well as the logic behind them and their implementation within the technical side of the game itself is a core component for the games' success. The logic behind the design of our spells can be understood in 2 ways, the 'Spell Type' (see \ref{spellType}) and the 'Element' (see \ref{elements}). This will provide insight into the artistic design of the spells, while \ref{modularSpells} will provide understanding regarding the implementation and impact on the gameplay of the game. Finally, \ref{vats} will show how the graphical elements are actually implemented into the game engine.
 
 \section{A Modular Spell System: Turning predictability to chaos} \label{modularSpells}
 
@@ -181,9 +208,7 @@ The basis of the idea for our game was an \gls{fps} game, but with spells rather
 
 \section{Categories of spells} \label{spellType}
 
-\section{Spell Types}
-
-\section{VATs}
+\section{VATs} \label{vats}
 
 % \chapter{How to hold a wand, a study of controls within games}
 
