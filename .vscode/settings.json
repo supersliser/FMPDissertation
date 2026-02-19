@@ -1,14 +1,9 @@
 {
-    "cSpell.language": "en-GB",
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": true,
-    "latex-workshop.format.fixQuotes.enabled": true,
-    "latex-workshop.bibtex-format.trailingComma": true,
-    "latex-workshop.formatting.latex": "latexindent",
-    "cSpell.words": [
-        "Archaos",
-        "cooldown",
-        "Titanfall",
-        "Witchfire"
-    ]
+  "cSpell.language": "en-GB",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "latex-workshop.format.fixQuotes.enabled": true,
+  "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.formatting.latex": "latexindent",
+  "cSpell.words": ["Airbender", "Archaos", "cooldown", "Titanfall", "Witchfire"]
 }

@@ -51,7 +51,7 @@
 
 \newglossaryentry{match}{
     name=Match,
-    description={A way of separating phases of gameplay into a ``playing'' phase and a ``menu'' phase. The former allowing the player to explore and use all available mechanics within a game and the latter allowing customisation of the player character}
+    description={A way of separating phases of gameplay into a \textbf{playing} phase and a \textbf{menu} phase. The former allowing the player to explore and use all available mechanics within a game and the latter allowing customisation of the player character}
 }
 
 \newglossaryentry{playstyle}{
@@ -62,4 +62,39 @@
 \newglossaryentry{respawn}{
     name=Respawn,
     description={Where the player's health is reset to its full amount, and their location is set to a specific location within the map, allowing a player to continue playing after their character is defeated during a \gls{match}}
+}
+
+\newglossaryentry{fizzle}{
+    name=Fizzle,
+    description={A spell ending and destanciating its own game object. Named after the onomatopoea of the proposed sound it could make to signify the spell converting to smoke and burning up its energy.}
+}
+
+\newglossaryentry{coroutine}{
+    name={Co-Routine},
+    description={A feature of C\# in which a function returning IEnumerator can be started and stopped in time with frames in the Unity Engine. The stop and start points can be defined using the command words \textbf{yield return}. This can then either be followed by the keyword \textbf{null} or by an instantiation of a \textbf{new WaitForSeconds()} object, causing it to wait for a set amount of time before continuing execution of the co-routine. All co-routines are executed in parallel with other code within the script.}
+}
+
+\newglossaryentry{alembic}{
+    name=Alembic File,
+    description={A file format used within 3D. This format is considered one of the less \textit{structured} and more raw than other file types such as FBX or USD. It is well known as being a simply baked mesh, with no other modifiers or details, with each point of the mesh baked per frame. This makes it very useful for exporting and loading animations as there is no abstraction through which data can be misinterpreted or lost and detail will not be lost when moving the data between engines.}
+}
+
+\newglossaryentry{stream}{
+    name=Data Stream,
+    description={A.K.A Stream Reader. This is a method of opening and reading files in which the file is declared as ``opened'' without loading all data into ram. This allows it to be read in sections without filling up memory, however, it does require the file to be available and openable at all times.}
+}
+
+\newglossaryentry{wasd}{
+    name=WASD Layout,
+    description={A standardised layout in video gaming for translating an object in space. Where pressing the \textbf{W} key translates \textit{forward}, the \textbf{A} key translates \textit{left}, the \textbf{S} key translates \textit{backwards} and the \textbf{D} key translates \textit{right}}
+}
+
+\newglossaryentry{bleedingedge}{
+    name=Bleeding Edge,
+    description={A word to describe immediacy, generally considered the most immediate, being directly connected to the trigger of an action with no delay between action and reaction}
+}
+
+\newglossaryentry{polar}{
+    name=Polar Coodinate,
+    description={A method of defining location relative to an origin. Where a cartesian coordinate system measures 2 straight axis from the origin, polar coordinates measure a rotation about a central point in degrees, then a radius from that central point.}
 }
