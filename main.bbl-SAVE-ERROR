@@ -53,6 +53,72 @@
       \verb https://media.altchar.com/prod/images/gm_article_promo_image/d05a30b4a66c-destiny-2-stormcaller.jpg
       \endverb
     \endentry
+    \entry{audish_riskofrain2_2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=098e813c2b5042ef31d857bcba9b35b5}{%
+           family={Audish},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{fullhash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{fullhashraw}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{bibnamehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authorbibnamehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authornamehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authorfullhash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authorfullhashraw}{098e813c2b5042ef31d857bcba9b35b5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Gold-Plated Games}
+      \field{month}{6}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{Review: {Risk} of {Rain} 2}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://goldplatedgames.com/2019/06/14/review-risk-of-rain-2/
+      \endverb
+      \verb{url}
+      \verb https://goldplatedgames.com/2019/06/14/review-risk-of-rain-2/
+      \endverb
+    \endentry
+    \entry{blankdemslate_whatareyourbuilds_2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ef12fc53dd3c12cb1d44a340f412de5}{%
+           family={{BlankDemSlate}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{fullhash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{fullhashraw}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{bibnamehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authorbibnamehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authornamehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authorfullhash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authorfullhashraw}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Reddit}
+      \field{month}{11}
+      \field{note}{r/titanfall. Accessed: 2026-05-15}
+      \field{title}{What are your builds?}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/titanfall/comments/17yjmne/what_are_your_builds/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/titanfall/comments/17yjmne/what_are_your_builds/
+      \endverb
+    \endentry
     \entry{overwatch2016}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19d50bdd90ef85ab79a3a5fb80b6324e}{%
@@ -214,7 +280,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Revised}
-      \field{note}{The famous "Third Law" appears in a footnote in Chapter 2, "Hazards of Prophecy: The Failure of Imagination".}
+      \field{note}{The famous "Third Law" appears in a footnote in Chapter 2, " Hazards of Prophecy: The Failure of Imagination".}
       \field{title}{Profiles of the Future: An Inquiry into the Limits of the Possible}
       \field{year}{1973}
       \field{pages}{21}
@@ -268,7 +334,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://x.com/DestinyBulletn/status/1993045237221277765}}
+      \field{howpublished}{\url{ https://x.com/DestinyBulletn/status/1993045237221277765}}
       \field{month}{5}
       \field{note}{Accessed: 2025-12-16}
       \field{title}{All Warlock Rift changes in Renegades}
@@ -476,6 +542,39 @@
       \verb https://www.ign.com/wikis/destiny-2/Stormcaller
       \endverb
     \endentry
+    \entry{ign_pubgpccontrols_2018}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6e98bd6a2bd89aed6ab0e1c12b43635}{%
+           family={{IGN Staff}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{fullhash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{fullhashraw}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{bibnamehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authorbibnamehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authornamehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authorfullhash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authorfullhashraw}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{IGN}
+      \field{month}{8}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{{PC} {Controls} - {PlayerUnknown's} {Battlegrounds} {Guide}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.ign.com/wikis/playerunknowns-battlegrounds/PC_Controls
+      \endverb
+      \verb{url}
+      \verb https://www.ign.com/wikis/playerunknowns-battlegrounds/PC_Controls
+      \endverb
+    \endentry
     \entry{jones2008narrative}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2af6e78a152404d4cd8c9a26913a80f1}{%
@@ -547,6 +646,34 @@
       \field{title}{Interactive storytelling for video games: A player-centered approach to creating memorable characters and stories}
       \field{year}{2011}
     \endentry
+    \entry{localthunk_balatro_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b48f7adc7da3be75ef56869e143d4dea}{%
+           family={{LocalThunk}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Playstack}%
+      }
+      \strng{namehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{fullhash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{fullhashraw}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{bibnamehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authorbibnamehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authornamehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authorfullhash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authorfullhashraw}{b48f7adc7da3be75ef56869e143d4dea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Video game}
+      \field{title}{Balatro}
+      \field{year}{2024}
+    \endentry
     \entry{long2011defining}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b44aa2f1861dcceaf40c74d0451f910e}{%
@@ -608,6 +735,74 @@
       \field{year}{2004}
       \field{pages}{25}
       \range{pages}{1}
+    \endentry
+    \entry{macdonald_balatro_2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3afa7c0893f938304b22d028252cda24}{%
+           family={MacDonald},
+           familyi={M\bibinitperiod},
+           given={Keza},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{fullhash}{3afa7c0893f938304b22d028252cda24}
+      \strng{fullhashraw}{3afa7c0893f938304b22d028252cda24}
+      \strng{bibnamehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authorbibnamehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authornamehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authorfullhash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authorfullhashraw}{3afa7c0893f938304b22d028252cda24}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Guardian}
+      \field{month}{2}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{Balatro: this fiendish mashup of solitaire and poker has taken over my life}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.theguardian.com/games/2024/feb/27/balatro-mashup-solitaire-poker-has-taken-over-my-life-roguelike
+      \endverb
+      \verb{url}
+      \verb https://www.theguardian.com/games/2024/feb/27/balatro-mashup-solitaire-poker-has-taken-over-my-life-roguelike
+      \endverb
+    \endentry
+    \entry{overwatchwiki_cosmetics_2026}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=97012b437e9e943cdc0831bb0e712371}{%
+           family={{Overwatch Wiki contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{fullhash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{fullhashraw}{97012b437e9e943cdc0831bb0e712371}
+      \strng{bibnamehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authorbibnamehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authornamehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authorfullhash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authorfullhashraw}{97012b437e9e943cdc0831bb0e712371}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Overwatch Wiki}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{Cosmetics}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://overwatch.fandom.com/wiki/Cosmetics
+      \endverb
+      \verb{url}
+      \verb https://overwatch.fandom.com/wiki/Cosmetics
+      \endverb
     \endentry
     \entry{reddit2024cursedbell}{online}{}{}
       \name{author}{1}{}{%
@@ -889,6 +1084,72 @@
       \verb https://media.altchar.com/prod/images/gm_article_promo_image/d05a30b4a66c-destiny-2-stormcaller.jpg
       \endverb
     \endentry
+    \entry{audish_riskofrain2_2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=098e813c2b5042ef31d857bcba9b35b5}{%
+           family={Audish},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{fullhash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{fullhashraw}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{bibnamehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authorbibnamehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authornamehash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authorfullhash}{098e813c2b5042ef31d857bcba9b35b5}
+      \strng{authorfullhashraw}{098e813c2b5042ef31d857bcba9b35b5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Gold-Plated Games}
+      \field{month}{6}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{Review: {Risk} of {Rain} 2}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://goldplatedgames.com/2019/06/14/review-risk-of-rain-2/
+      \endverb
+      \verb{url}
+      \verb https://goldplatedgames.com/2019/06/14/review-risk-of-rain-2/
+      \endverb
+    \endentry
+    \entry{blankdemslate_whatareyourbuilds_2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ef12fc53dd3c12cb1d44a340f412de5}{%
+           family={{BlankDemSlate}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{fullhash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{fullhashraw}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{bibnamehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authorbibnamehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authornamehash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authorfullhash}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \strng{authorfullhashraw}{8ef12fc53dd3c12cb1d44a340f412de5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Reddit}
+      \field{month}{11}
+      \field{note}{r/titanfall. Accessed: 2026-05-15}
+      \field{title}{What are your builds?}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/titanfall/comments/17yjmne/what_are_your_builds/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/titanfall/comments/17yjmne/what_are_your_builds/
+      \endverb
+    \endentry
     \entry{overwatch2016}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19d50bdd90ef85ab79a3a5fb80b6324e}{%
@@ -1050,7 +1311,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Revised}
-      \field{note}{The famous "Third Law" appears in a footnote in Chapter 2, "Hazards of Prophecy: The Failure of Imagination".}
+      \field{note}{The famous "Third Law" appears in a footnote in Chapter 2, " Hazards of Prophecy: The Failure of Imagination".}
       \field{title}{Profiles of the Future: An Inquiry into the Limits of the Possible}
       \field{year}{1973}
       \field{pages}{21}
@@ -1104,7 +1365,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://x.com/DestinyBulletn/status/1993045237221277765}}
+      \field{howpublished}{\url{ https://x.com/DestinyBulletn/status/1993045237221277765}}
       \field{month}{5}
       \field{note}{Accessed: 2025-12-16}
       \field{title}{All Warlock Rift changes in Renegades}
@@ -1312,6 +1573,39 @@
       \verb https://www.ign.com/wikis/destiny-2/Stormcaller
       \endverb
     \endentry
+    \entry{ign_pubgpccontrols_2018}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6e98bd6a2bd89aed6ab0e1c12b43635}{%
+           family={{IGN Staff}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{fullhash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{fullhashraw}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{bibnamehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authorbibnamehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authornamehash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authorfullhash}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \strng{authorfullhashraw}{f6e98bd6a2bd89aed6ab0e1c12b43635}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{IGN}
+      \field{month}{8}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{{PC} {Controls} - {PlayerUnknown's} {Battlegrounds} {Guide}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.ign.com/wikis/playerunknowns-battlegrounds/PC_Controls
+      \endverb
+      \verb{url}
+      \verb https://www.ign.com/wikis/playerunknowns-battlegrounds/PC_Controls
+      \endverb
+    \endentry
     \entry{jones2008narrative}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2af6e78a152404d4cd8c9a26913a80f1}{%
@@ -1383,6 +1677,34 @@
       \field{title}{Interactive storytelling for video games: A player-centered approach to creating memorable characters and stories}
       \field{year}{2011}
     \endentry
+    \entry{localthunk_balatro_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b48f7adc7da3be75ef56869e143d4dea}{%
+           family={{LocalThunk}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Playstack}%
+      }
+      \strng{namehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{fullhash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{fullhashraw}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{bibnamehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authorbibnamehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authornamehash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authorfullhash}{b48f7adc7da3be75ef56869e143d4dea}
+      \strng{authorfullhashraw}{b48f7adc7da3be75ef56869e143d4dea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Video game}
+      \field{title}{Balatro}
+      \field{year}{2024}
+    \endentry
     \entry{long2011defining}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b44aa2f1861dcceaf40c74d0451f910e}{%
@@ -1444,6 +1766,74 @@
       \field{year}{2004}
       \field{pages}{25}
       \range{pages}{1}
+    \endentry
+    \entry{macdonald_balatro_2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3afa7c0893f938304b22d028252cda24}{%
+           family={MacDonald},
+           familyi={M\bibinitperiod},
+           given={Keza},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{fullhash}{3afa7c0893f938304b22d028252cda24}
+      \strng{fullhashraw}{3afa7c0893f938304b22d028252cda24}
+      \strng{bibnamehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authorbibnamehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authornamehash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authorfullhash}{3afa7c0893f938304b22d028252cda24}
+      \strng{authorfullhashraw}{3afa7c0893f938304b22d028252cda24}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Guardian}
+      \field{month}{2}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{Balatro: this fiendish mashup of solitaire and poker has taken over my life}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.theguardian.com/games/2024/feb/27/balatro-mashup-solitaire-poker-has-taken-over-my-life-roguelike
+      \endverb
+      \verb{url}
+      \verb https://www.theguardian.com/games/2024/feb/27/balatro-mashup-solitaire-poker-has-taken-over-my-life-roguelike
+      \endverb
+    \endentry
+    \entry{overwatchwiki_cosmetics_2026}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=97012b437e9e943cdc0831bb0e712371}{%
+           family={{Overwatch Wiki contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{fullhash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{fullhashraw}{97012b437e9e943cdc0831bb0e712371}
+      \strng{bibnamehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authorbibnamehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authornamehash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authorfullhash}{97012b437e9e943cdc0831bb0e712371}
+      \strng{authorfullhashraw}{97012b437e9e943cdc0831bb0e712371}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Overwatch Wiki}
+      \field{note}{Accessed: 2026-05-15}
+      \field{title}{Cosmetics}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://overwatch.fandom.com/wiki/Cosmetics
+      \endverb
+      \verb{url}
+      \verb https://overwatch.fandom.com/wiki/Cosmetics
+      \endverb
     \endentry
     \entry{reddit2024cursedbell}{online}{}{}
       \name{author}{1}{}{%

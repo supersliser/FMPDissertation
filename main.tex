@@ -5,6 +5,7 @@
 \usepackage{setspace}
 \usepackage[toc, acronym]{glossaries}
 \doublespacing
+\usepackage{gensymb}
 
 \usepackage[backend=biber, style=apa, sorting=nyt]{biblatex}
 \addbibresource[]{ref.bib}
@@ -45,6 +46,8 @@ I would like to thank Jacques Moss for his work and collaboration on this projec
 
 I would also like to thank Dr. Leigh McLoughlin for his supervision and guidance throughout the project. As well as his help with expanding our initial concept.
 
+I would like to thank Marius Vonya, Eric Szanto and Tom Stephenson for their work on the audio of this game. The spell effects, character foley and soundtracks really enhance the game and bring out its best features.
+
 \pagebreak
 
 \tableofcontents
@@ -57,15 +60,31 @@ I would also like to thank Dr. Leigh McLoughlin for his supervision and guidance
 
 \printglossaries
 
-\chapter{The Fictional Setting, how setting is defined in a video game} \label{chap1}
+\chapter{Introduction} \label{intro}
 
-\section{An introduction to active storytelling} \label{intro1}
+This video game was an attempt at a first person shooter which attempts to make use of psuedo-randomness to add further nuance and chaos within the game, without subtracting from the primary intention of a video game - to have fun. Using the setting of a fantasy world such posing in opposition to the predictability and certainty that science can provide, we have the players pose as wizards who cast chaotic spells (hence the name \textbf{Archaos} or \textbf{Arcane Chaos}). These spells were my primary objective, to develop them into something that is able to simulate chaos without losing usability, as the introduction of overwhelming randomness that cannot be throttled or controlled is counterproductive to that same objective for a video game. Players need to feel in control of their game, this control was both created and destroyed by the spells and thus had to be held in delicate balance to maintain the notion of fun that we saught. This control was implemented through a series of \textit{casting controls} which would allow the player to construct and cast the spells as they needed to. Allowing the spell to appear chaotic to anybody other than the caster, whilst still allowing the player who created the spell to have control over the exact properties of the spell.
+
+As such, the intended outcomes of this project are:
+
+\begin{enumerate}
+	\item A game that people consider to be fun.
+	\item A method of constructing spells that is unpredictable and chaotic without sacrificing control and fun.
+	\item Spells that are fitting into the low-poly / Voxelised style of the game.
+	\item A casting system which allows the player to control and manipulate the spells into the desired form or such that they create the desired effect.
+	\item A naturalistic map portion that is believable to be physically accurate whilst staying within the style of the game.
+\end{enumerate}
+
+The following chapters should show that the items above have all been completed.
+
+\chapter{The role of setting and randomness in a video game} \label{chap1}
+
+\section{Active Storytelling} \label{intro1}
 
 A source of entertainment must be experienced in order for it to entertain. A way in which a given text can be categorised is based on how it entertains the audience. It could either be: passive, in which it provides an experience which does not directly change based on the audiences own thoughts or actions. Or it could be interactive (or active for short). This is where the audience is able to affect the events that occur within the story by making choices \parencite{heinderyckx2013praise}. One of the defining facts of a video game is that it is interactive, the audience is able to interact with the game and assist with its storytelling. This is not to say that all games are required to have a narrative, as some rely on entertainment without a clear story or \gls{todorov}. Whether a narrative is present or not, the feeling and effect of a game is omni-present throughout the gameplay, as it would be throughout a passive medium such as film or literature, every aspect has a direct impact on the feeling that the text creates, let alone its defining characteristics.
 
 As I mentioned earlier, the primary use of a video game is that it is interactive, meaning that the effect can exist as something that is simply experienced such as graphics or audio, but also in the form of the logic behind the game. What the player is able to cause to occur within the game is the primary purpose of the video game medium. This is confirmed time and time again when considering narrative in the context of a video game \parencite{somerdin2016game} \parencite{jones2008narrative} \parencite{lebowitz2011interactive}. As such, we feel that it is essential for us to define the setting within the mechanics of the game itself, rather than simply relying on traditional narrative technologies (the visuals and audio of the game).
 
-\section{The intended effect} \label{goal1}
+\section{Our intended effect} \label{goal1}
 
 The setting of \textbf{Archaos} is that of \gls{fantasy}, thus we wished for the games mechanics to reflect this this. We sought that the games core gameplay would not make sense in any other setting; That it would be entirely unique to our choice of background and genre for \textbf{Archaos}. Our main point of comparison was the \gls{scifi} setting as this represents a future setting, while \gls{fantasy} represents a more historical point of view.
 
@@ -75,7 +94,13 @@ In contrast to such, a \gls{fantasy} leans towards magic as a replacement for in
 
 However, with this, there is an issue. As was once said by \cite{clarke1973profiles} ``Any sufficiently advanced technology is indistinguishable from magic.''. This quote highlights an important consideration, how can one differentiate science from magic? If you were to remove any other convention that could be used to understand the setting, how would you tell the difference between magic and technology.
 
-\section{How others have differentiated} \label{bib1}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{yo-yo-capaldi-girl-who-died-570x320.jpg}
+	\caption{An episode of Doctor Who entitled "The Girl who died" during which The Doctor attempts to use a yo-yo to present himself as Zeus to a village of Vikings, showing the presence of this technology in modern media}
+\end{figure}
+
+\section{How others show the difference between Sci-Fi and Fantasy} \label{bib1}
 
 \subsection{Destiny 2} \label{destiny}
 
@@ -141,7 +166,7 @@ Witchfire \cite{astronomicalclub2023witchfire} is an \gls{fps} video game set in
 
 \begin{itemize}
     \item Firstly, Destiny relies on a multi-setting situation to provide the separation while Witchfire fully embraces the medieval setting, as such, all guns have some form of magical ability, while this is only true for some guns in the case of Destiny 2.
-    \item Secondly, Destiny 2 divides its abilities into 5 clear categories with clear and distinct mechanics and use cases (as visible in figure \ref{destinyAbilities}). A grenade ability is a throwable explosive while a melee ability is applied to a nearby target by making physical contact. However, Witchfire only uses a similar categorisation to determine magnitude and \gls{cooldown}, where light spells are less powerful but faster to use, while the inverse is true for heavy spells (as visible in the graphical difference shown in figure \ref{witchfireComparison}).
+    \item Secondly, Destiny 2 divides its abilities into 5 clear categories with clear and distinct mechanics and use cases (as visible in figure \ref{destinyAbilities}). A grenade ability is a throw-able explosive while a melee ability is applied to a nearby target by making physical contact. However, Witchfire only uses a similar categorisation to determine magnitude and \gls{cooldown}, where light spells are less powerful but faster to use, while the inverse is true for heavy spells (as visible in the graphical difference shown in figure \ref{witchfireComparison}).
     \item Finally, heavy spells are much more mechanically complex. For example, one such spell creates a mystical bell in the air (example available in figure \ref{cursedBell}) which stuns all nearby enemies when it is shot with a gun (causing it to ring out).
 \end{itemize}
 
@@ -180,9 +205,15 @@ It is then this which allows us to differentiate \gls{scifi} from \gls{fantasy}.
 
 Furthermore, chaos can also be represented through a scientific approach known as \gls{chaostheory} \parencite{lorenz2004deterministic}. This is a theory which suggests that small changes to a system can lead to drastic changes in results. There are a few ways in which this could be implemented within a gaming environment. The most \textit{programmatic} of which would be the use of chain reactions, where events can trigger other events which trigger other events. Ultimately culminating in a very different situation if only 1 of the earlier events are not triggered.
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.9\linewidth]{chaostheory.png}
+	\caption{An image of chaos theory plotted into a 3D Lorenz Attractor, the image shows both the interconnected and continuously looping properties that create unpredictability from controllable mathematics}
+	\label{chaostheory}
+\end{wrapfigure}
+
 Another useful difference which we were able to exploit is the difference in plausibility between \gls{scifi} and \gls{fantasy}. \gls{scifi} is ultimately set in the future, and thus there is an expectation that it would be based upon current technologies. In any case, \gls{scifi} is expected to stay within the realms of possibilty, as if it could happen in the future at some point. However, \gls{fantasy} is not bound by the same rules. Since \gls{fantasy} is set in a historical setting, it can be proven to have not happened. It is not necessary for it to hold the same suspension of disbelief and thus can completely subvert natural laws and empirically proven facts as it is already proven to exist outside of known reality. \parencite{long2011defining}
 
-\section{Separating order from chaos} \label{results1}
+\section{How to create chaos without sacrificing control} \label{results1}
 
 Largely, the intention described in \ref{method1} is successful. However, there is 1 key factor that is not considered. The \textit{fun} factor. You see, within our description, we analysed how to create a believable setting, but did not yet consider how this equates to creating a fun game. This is incredibly problematic for a video game especially as these thrive almost purely on the existence of fun within the text.
 
@@ -192,7 +223,22 @@ As can be seen in many recent submissions to the medium (\cite{bungie2017destiny
 
 Ultimately, the use of chaos within the mechanics of a game is largely down to a choice of style as well as a management of implementation. By utilising \gls{chaostheory}, one can implement a chaotic, random system without directly removing control from the player. And small amounts of randomness can enhance the experience without diminishing it entirely.
 
-\chapter{Spells and their design}
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{balatro.png}
+		\caption{Image Courtesy of \cite{macdonald_balatro_2024}}
+		\label{balatro}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{ror2-2.png}
+		\caption{Image Courtesy of \cite{audish_riskofrain2_2019}}
+		\label{ror2}
+	\end{subfigure}
+	\caption{Figures \ref{balatro} and \ref{ror2} feature screenshots from the games Balatro \parencite{localthunk_balatro_2024} and Risk of Rain 2 \parencite{audish_riskofrain2_2019}. These are both examples of games that use some amount of random number generation. However, the design allows the random numbers to act as a "base" or "springboard" from which the player can build from. This is an example of how randomness can be used correctly in video games. However, it is worth noting that both of these games make use of the same genre, known as a "Rougelike", which benefits from this style of a random starting point due to the structure and layout of the game requiring users to build off of what they are given to achieve their goals.}
+	\label{randomGames}
+\end{figure}
+
+\chapter{The design of the spells}
 
 The basis of the idea for our game was an \gls{fps} game, but with spells rather than guns. As such, the design of these spells, as well as the logic behind them and their implementation within the technical side of the game itself is a core component for the games' success. The logic behind the design of our spells can be understood in 2 ways, the 'Spell Type' (see \ref{spellType}) and the 'Element' (see \ref{elements}). This will provide insight into the artistic design of the spells, while \ref{modularSpells} will provide understanding regarding the implementation and impact on the gameplay of the game. Finally, \ref{vats} will show how the graphical elements are actually implemented into the game engine.
 
@@ -206,23 +252,71 @@ In the majority of \gls{fps} games, you would pick a weapon, and that weapon wou
 
 Titanfall 2 \cite{Titanfall2} is a FPS parkour game with both a singleplayer campaign and a separate multiplayer experience. The game makes use of many movement-based mechanics where the player can run and jump around their opponent, bouncing off of walls and grappling around the map to fight off opponents. The game features multiple preset archetypes which feature different abilities, a separate grenade ability as well as a \textit{primary}, \textit{secondary} and \textit{heavy} gun the the player can switch between. All of which are defined into 1 of 10 possible presets. Within the playing component of the \gls{match}, the player is locked into their preset choice until they \gls{respawn}. However, the player is able to change their chosen preset, it simply won't take effect until the \gls{respawn}.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{titanfall.jpg}
+	\caption{A screenshot from Titanfall 2 showing the "Loadout" screen allowing players to quickly change their currently equipped weapons and equipment whilst they are respawning. Image Courtesy of \cite{blankdemslate_whatareyourbuilds_2023}}
+	\label{titanfallFig}
+\end{figure}
+
 This is an interesting approach, as it does allow the player to adapt their \gls{playstyle} to the general flow of the \gls{match}, however they are unable to respond to specific situations they might find within a specific confrontation or encounter. This forces the player to rely on skill and their ability to take their setup and adapt it for the given situation. While still allowing them to change their overall approach for the flow of battle (taking a more defensive stance if the players appear to be losing for example).
 
 \subsubsection{Overwatch} \label{overwatch}
 
 Overwatch \cite{overwatch2016} is an \gls{fps} game which features a set number of characters, each with specific and immutable abilities. Each character is split into 1 of 4 specialities: Tank, Defence, Attack and Support \footnote{later on, defence was merged into attack}. Each character has a set list of abilities which are specific to that character. The player's character is set once at the start of the game, then it can be altered between the player's death and \gls{respawn}.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{overwatchheroes.png}
+	\caption{A screenshot showing the heroes screen from Overwatch, this screen appears at the start of each game and again once the player dies, allowing them to change characters if they would like to change their tactics. Image Courtesy of \cite{overwatchwiki_cosmetics_2026}}
+	\label{overwatchheroes}
+\end{figure}
+
 The controllable component of this implementation is similar to the game mentioned in section \ref{titanfall}. The player can select their character in response to overall match time while still requiring adaptability in moment to moment combat encounters. However, character ability sets are completely immutable. A character has a set list of abilities that will remain the same every time this character is used. This can make balancing easier to achieve as there are less variables which must be compared. Furthermore, the abilities of a character can be balanced to form certain archetypes and ability sets. This allows some characters to act as specialists in a specific role while others are more adaptable. While this is easier to manage, it can be lead to some characters becoming more \textit{useful} than other characters if a certain situation is more common. To a certain extent, it can also decrease the impact that the player can feel they are having on the game as their abilities are limited to what is preset by the games developers.
 
-\subsection{How to make a spell} \label{method2}
+\subsection{How we build our spells} \label{method2}
 
-Throughout the development of \textbf{Archaos}, we developed 3 systems of managing and casting spells. Our first system was similar to that of Overwatch (see section \ref{overwatch}). We had a set of spells which could be switched between. Then the preset spell archetype would be modified based on the casting performed by the player \footnote{see  chapter \ref{chapter3}}. There were then 16 spells defined by cross-referencing elements \footnote{see section \ref{elements}} with possible characteristics defined by 4 specific characteristics \footnote{see section \ref{spellType}}. \footnote{The original table can be found in appendix \ref{spellTable}}.
+Throughout the development of \textbf{Archaos}, we developed 3 systems of managing and casting spells. Our first system was similar to that of Overwatch (see section \ref{overwatch}). We had a set of spells which could be switched between. Then the preset spell archetype would be modified based on the casting performed by the player \footnote{see  chapter \ref{chapter3}}. There were then 16 spells defined by cross-referencing elements \footnote{see section \ref{elements}} with possible characteristics defined by 4 specific characteristics \footnote{see section \ref{spellType}}. \footnote{The original table can be found in appendix \ref{spellTable}}. Figure \ref{castingsystem1} shows the general logic of the system.
 
-In our second plan, we used a slightly different method, the player would choose a list of spells. However, they would not switch between them, rather the intended spell is guessed based on the input from the user. This would require leveraging the power of a gesture detection artificial intelligence in order to calculate which spell was being cast from a list of all possible spells to cast. Each spell would have a list of motions that are predefined to compare against each other, similar to the first system.
+In our second plan, we used a slightly different method, the player would choose a list of spells. However, they would not switch between them, rather the intended spell is guessed based on the input from the user. This would require leveraging the power of a gesture detection artificial intelligence in order to calculate which spell was being cast from a list of all possible spells to cast. Each spell would have a list of motions that are predefined to compare against each other, similar to the first system. See figure \ref{castingsystem2} for the general flow of logic.
+
+\begin{table}[H]
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+                               & Fire        & Ice        & Earth      & Air       \\
+        \hline
+        Small Projectile Spell & Firebolt    & Ice Spike  & \{None\}   & Push      \\
+        Large Projectile Spell & Fire ball   & \{None\}   & Rock Throw & \{None\}  \\
+        Building Spell         & Fire Path   & Ice Pillar & Rock Wall  & Whirlwind \\
+        Shield Spell           & Fire Shield & \{None\}   & \{None\}   & Deflect   \\
+        Self Afflicting Spell  & \{None\}    & Freeze     & Petrify    & Push Self \\
+        \hline
+    \end{tabular}
+    \caption{A table of spells built by cross-referencing common functionality and archetype (section \ref{spellType}) against spell elements (section \ref{elements})}
+    \label{spellTable}
+\end{table}
+
+\pagebreak
+
+\begin{figure}[H]
+	\centering
+\begin{subfigure}{0.3\textwidth}
+	\includegraphics[width=\linewidth]{CastingSystem1.png}
+	\caption{A flowchart showing the general logic of the first casting system}
+	\label{castingsystem1}
+\end{subfigure}
+\begin{subfigure}{0.3\textwidth}
+	\includegraphics[width=\linewidth]{CastingSystem2.png}
+	\caption{A flowchart showing the general logic of the second casting system. (1): Each movement is represented based on the casting system used (see \ref{controlSystems}}
+	\label{castingsystem2}
+\end{subfigure}
+\caption{}
+\label{oldSpellSystems}
+\end{figure}
 
 It is our final system where we took a different design altogether\dots
 
-\subsection{Building up magic} \label{results2}
+\subsection{The modular approach to building spells} \label{results2}
 
 Our final system worked in a fundamentally different way to the concepts defined in section \ref{method2}. In both of those, the spells were pre-written, each spell would be tailor made with its own model, own effects, own elements, damage, etc\dots And everything should be fit into the pattern defined in table \ref{spellTable}. Thus to add a spell, you would add a new element to the list or a new spell type. This modular system works in a somewhat similar fashion, but does not define the spells at compile time. A way in which this can be understood is that the table \ref{spellTable} still exists, but is not filled in. Throughout casting the spell, the player fills in the table as they need to.
 
@@ -237,35 +331,42 @@ It works by utilising an event-driven paradigm, in which 6 key events are define
     \item Travel (runs once every frame)
 \end{itemize}
 
+
 When building up the spell, the ``projectile type'' will determine a lot of these by default. However, the player can then add certain extra event callbacks \footnote{full list available at in section \ref{spellEvents}} while building the spell \footnote{more details on how the spell is built up in chapter \ref{chapter3}}. Furthermore, additional modules can also add direct multipliers to certain parameters of the spell such as speed, range, element and mesh without adding whole events into it \footnote{a full list of modifiers can be found in section \ref{spellVariables}}.
 
-\subsection{Did the spell fizzle?} \label{conclusion2}
+\pagebreak
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{CastingSystem3.drawio.png}
+	\caption{A flowchart showing the building process of the modular spell system}
+	\label{castingsystem3}
+\end{figure}
+\pagebreak
+	\begin{figure}[H]
+
+	\centering
+	\includegraphics[width=0.3\linewidth]{CastingSystem3.1.drawio.png}
+	\caption{A flowchart showing the sequence of events being triggered throughout the lifetime of a spell. It is worth noting that some branches do not have a designated "end" as the deletion of a spell object is itself a callback for the "fizzle" event, and the fizzle event is a callback for collisions, but it is not necessary and is dependent upon the type of spell.}
+	\label{castingsystem4}
+\end{figure}
+
+
+\subsection{Conclusion} \label{conclusion2}
 
 Ultimately, we believe this final system described in section \ref{results2} to be the most functional. Allowing players to build their own spells leans into the \gls{chaostheory} vs randomness issues described in chapter \ref{chap1}. As the players themselves have complete control over the spell they cast, if the spell does not work as intended then it is a consequence of their own actions, not failing on a randomisation system. This, as previous discussed, allows players to truly express skill and remain in control of the outcome of the game, without giving up our intention to create a chaotic system.
 
-\section{The (much smaller) table of elements} \label{elements}
+\section{Dividing spells into elements} \label{elements}
 
 One of the ways in which we wished to be able to divide and categorise our spells was through the ``Element'' of the spell. The word element is used in a strange way in this. We do refer to something which cannot be manufactured and is simply found in nature, similar to the elements found upon the periodic table of elements. However, we do not refer directly to the elements such as carbon, titanium or sulphur. Rather, we wished to refer to a smaller set of key-components from which the real world can be said to be formed. The issue is that there are many different approaches on how this can be achieved, and even then, there are other questions as to how this can be displayed properly.
 
-\subsection{What stuff is made of}
+\subsection{The history of elements and primordials}
 
-Within different theologies, there are many different theories as to what the fundamental components of the universe are. Greek mythology tracks these parts back to the central primordial deity ``Chaos'' from whom all other existence stems from. After such deity, the primordial forces are thought to be \footnote{This is not a full list of all primordial deities, just enough to demonstrate the contrast in \textit{environmental} and \textit{human-centric} aspects of ancient greek beliefs on universal origins} (in no particular order):
-
-\begin{itemize}
-    \item Nyx (The night)
-    \item Erebus (The darkness)
-    \item Ios (The Light)
-    \item Hyperion (The Day)
-    \item Eros (Love)
-    \item Psyche (Souls)
-    \item Tartarus (Infinity)
-\end{itemize}
-
-This differs greatly from what, more scientific studies upon existence have concluded. Much of the alchemical research results in 4 fundamental elements in the universe: \textbf{Fire, Water, Earth, Air}. This is also confirmed by other theologies such as norse mythology and astrology\footnote{Astrological context for the game is discussed in the lore document \ref{sec:elements}} as well as other media texts such as ``Avatar, the last Airbender''. Furthermore, within astrology, certain elements are pinned as the antithesis of another, specifically fire against earth and water against air.
+Within different theologies, there are many different theories as to what the fundamental components of the universe are. Greek mythology tracks these parts back to the central primordial deity ``Chaos'' from whom all other existence stems from. After such deity, the primordial forces are thought to be \footnote{This is not a full list of all primordial deities, just enough to demonstrate the contrast in \textit{environmental} and \textit{human-centric} aspects of ancient greek beliefs on universal origins}. This differs greatly from what, more scientific studies upon existence have concluded. Much of the alchemical research results in 4 fundamental elements in the universe: \textbf{Fire, Water, Earth, Air}. This is also confirmed by other theologies such as norse mythology and astrology\footnote{Astrological context for the game is discussed in the lore document \ref{sec:elements}} as well as other media texts such as ``Avatar, the last Airbender''. Furthermore, within astrology, certain elements are pinned as the antithesis of another, specifically fire against earth and water against air.
 
 These elements present an issue for a first person shooter game however. The issue being that the element \textit{Water} is difficult to bring into an \gls{fps} game, as it is not necessarily a malicious force without external force. Fire burns, rocks can smash and wind can push and shove but water simply adapts and flows. Yet it is arguably not a supportive or protective entity either. Fire is warm and used for cooking food; earth is used to build structures and tools; and Air is used to travel and propel vehicles. Yet water simply remains. It is a neutral element which ultimately fights against the chaotic intentions of our game. We seek for the mechanics of the game to exhibit chaos and be unpredictable, thus an element which decidedly neutralises all other chaotic elements would only subtract from such an endeavour. To fix this, we chose to convert the element of water to its solid counterpart \textbf{Ice}. This was chosen as ice can be used to freeze and kill, but also to preserve and protect, thus allowing it an active role within the game along with the rest of the elements.
 
-\subsection{Fire hot!} \label{afflictions}
+\subsection{How to convert elements into practical game mechanics} \label{afflictions}
 
 This is useful to consider, but a consideration that must be made is how this will actually interact with the games mechanics. Why would the player use a fire spell rather than an earth spell? The most in-keeping with our current mechanical system is for the elements to provide certain modifications to the parameters listed in \ref{spellVariables} \footnote{the list of all modifications can be found in \ref{spellElementVariables}}.
 
@@ -281,16 +382,22 @@ This mechanic introduced a way in which spells could apply a lasting effect onto
         Burn   & Continuously damages the target over time                                                                                           & Fire                                                                                                                                                                                 \\
         Freeze & Slows and eventually stops the player from moving                                                                                   & Ice                                                                                                                                                                                  \\
         Push   & Creates a force which pushes the player in a direction                                                                              & Air                                                                                                                                                                                  \\
-        Dizzy  & Adds a layer of unpredictability to the players movement\footnote{This is to simulate the player being hit in the head with a rock} & Earth\footnote{Originally, the earth affliction was called petrified, and was a boolean form of the freeze affliction. This was swapped with Dizzy to provide mechanical uniqueness} \\
+        Dizzy  & Adds a layer of unpredictability to the players movement & Earth \\
         \hline
     \end{tabular}
     \caption{A table showing the list of afflictions, a description of their impact on the game and the element that causes the given affliction}
     \label{afflictonTable}
 \end{table}
 
+\begin{wrapfigure}{L}{0.3\textwidth}
+	\includegraphics[width=0.9\linewidth]{Affliction.drawio.png}
+	\caption{A flowchart showing the general process of an affliction, note the infinite loop as this occurs constantly within the frame update loop and allows affliction amount to be increased at any point}
+	\label{afflictionflowchart}
+\end{wrapfigure}
+
 These afflictions work by applying an amount out of 100, an amount defined by the parameter \textit{Affliction Strength}. This amount is slowly reduced by a set amount over a time defined by the parameter \textit{Affliction Length}. While the affliction's strength is higher, it is more potent (e.g. Burn will do more damage, Freeze slows the player more). This system therefore allows afflictions to be layered upon each other as, if a player already has 20 freeze, another 30 freeze can just be added onto the original freeze value applied to a player. The only limit is that this is capped to 100 to avoid unpredictable behaviour as well as limit some afflictions to their strongest form (for example freeze 100 is completely frozen). This concludes the ways in which the elements are able to have a mechanical effect upon the game \textbf{Archaos}
 
-\subsection{Colour of the wind}
+\subsection{The 'look' of the spells}
 
 The final way in which the element of the spell would have an impact upon the game, is the graphical implementation of the element. Within the original spell system discussed in section \ref{method2}, the element would have a direct impact on the model and animation of the spell due to the fact that different spells would be defaultly bound to specific elements. However, in the current system (discussed in section \ref{results2}), elements are not as tightly bound to specific spells, and as such, have less of a direct graphical impact.
 
@@ -307,7 +414,33 @@ Within both systems, the colour of the spells was also a major component of the 
 
 By using these 4 colours, are intention was to create a clear distinction between elements, allowing a player to look at a spell and instantly see what element it is.
 
-\section{Categories of spells} \label{spellType}
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{boltFire.png}
+		\caption{The \textit{fire} colours applied to the \textit{bolt} spell}
+		\label{firebolt}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{boltIce.png}
+		\caption{The \textit{ice} colours applied to the \textit{bolt} spell}
+		\label{icebolt}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{boltEarth.png}
+		\caption{The \textit{earth} colours applied to the \textit{bolt} spell}
+		\label{earthbolt}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\linewidth]{boltAir.png}
+		\caption{The \textit{air} colours applied to the \textit{bolt} spell}
+		\label{airbolt}
+	\end{subfigure}
+	\caption{A collection of bolts showcasing the colours of the elements applied to spells}
+	\label{boltColours}
+\end{figure}
+
+\section{Programming Implementation} \label{spellType}
 
 An issue we faced within the implementation of the various spells was how to implement their mechanics. It would surely be possible to program each spell individually, however, this would likely result in lots of repeated code. As certain concepts within spells, such as a projectile travelling forward, spawning a structure on collision with the environment or parenting an object to a player are common functions that would be shared by multiple spells.
 
@@ -318,18 +451,17 @@ This ultimately led to the development of specific categories (or classes) of sp
 The original implementation (as discussed in section \ref{method2}) utilises an inheritance tree of classes. All spells would inherit from a \textbf{Spell} class, which had 3 subclasses: \textbf{Travelling spell}, \textbf{Building Spell} and \textbf{Self Spell}. From these sub-classes, each specific implementation of a spell would then inherit and set necessary parameters with default values for that specific spell. This allows spells of the same category \footnote{see table \ref{spellTable} for the list of categories and associated spells} to act in similar ways. For example all Travelling spells (or projectile spells) would feature a projectile collider mesh which would travel through the air at a set speed, until it collided with an object, or travelled for a set range. If it hit a player, then the player would be damaged and may receive an affliction\footnote{see section \ref{afflictions} for a full description of afflictions}.
 
 \begin{figure}[h]
-    \centering
-    \caption{An inheritance diagram showing the class layout of the Spell class}
-    \label{spellInheritanceDiagram}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \caption{A flowchart showing the algorithm for a travelling spell}
-    \label{travellingSpellFlowchart}
-\end{figure}
-
-% Make sure that we create an inheritance diagram and a flowchart for the travelling spell.
+    		\centering
+    		\includegraphics[width=\textwidth]{oldSpellInheritance.drawio.png}
+    		\caption{An inheritance diagram showing the class layout of the Spell class}
+    		\label{spellInheritanceDiagram}
+	\end{figure}
+	\begin{figure}[H]
+    		\centering
+		\includegraphics[width=0.3\textwidth]{travellingSpell.drawio.png}
+		\caption{A flowchart showing the algorithm for a travelling spell}
+		\label{travellingSpellFlowchart}
+	\end{figure}
 
 This made adding spells fairly easy as it could inherit already written code. And further mechanics could also be based upon the functionality of other systems. However, it required each spell to be predefined and built up at compile time, as you cannot select inheritance at runtime, meaning the spell would not be able to be built up as the game progressed. At the beginning of development, this was our intention, however that quickly faded as we became aware of the greater possibility that our game embodied.
 
@@ -339,13 +471,20 @@ The modular implementation took a different approach, the entire spell (and all 
 
 This allows all components of the spell to be added when needed, as well as allowing components of different spells to be ``mixed and matched'' which massively helps to further our task of creating a truly chaotic system aligning with \gls{chaostheory} without utilising randomisation due to the narrative issues this creates\footnote{See section \ref{intro1} for more details on this topic}.
 
-\section{VATs} \label{vats}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{ModularSpells.drawio.png}
+	\caption{A class diagram showing the properties and methods inside of the primary Modular Spell class. Note: Setters and Getters with no extra functionality have been removed for conciseness}
+	\label{ModularSpell}
+\end{figure}
+
+\section{Design Implementation} \label{vats}
 
 There was a specific implementation issue with the spell models which required a large change in approach to said implementation. Our engine of choice for creating this game was Unity. However, this engine had a flaw, it was not equipped to deal with an \gls{alembic}. The key issue was that the Unity provided \gls{alembic} package would read the data as a \gls{stream}. This necessitates the file to be present at all times while the game is running. This was not an issue during development, as all development files are available to the developer in their raw format. However, upon building the game, Unity would package and compress all development files into a custom format called a ``.unitypackage''. This proposed a fundamental issue as the files could not be read from this new compressed format.
 
 There were 2 methods in which this could be solved: Option 1 was to build a custom alembic importer that would work with ``.unitypackage'' files. This was quickly dismissed due to the amount of unnecessary work this would require. Instead we went with option 2: Find another file format. At first I tested FBX and USD, but these were met with a specific issue. Due to the particle-esque style of some spells, points that exist at the start of the spell may not exist at the end and vice-versa. Thus we needed a file format which could accomplish this. After testing a few more, I eventually came across a SideFX Labs testing exporter called a Vertex Animated Textures exporter.
 
-\subsection{How to A some Vs with a T}
+\subsection{How to use a Vertex Animated Texture}
 
 \begin{figure}[h]
     \centering
@@ -387,23 +526,25 @@ There is a final component which is custom made to fit our system. As discussed 
 
 The final issue we had to face was the manner of controls we would use to allow players to interact with our game. As mentioned in section \ref{intro1}, the key concept behind a game is that it is interactive. And as such, the mode of interaction is an extremely important point of consideration. Most controls of \gls{fps} games are relatively standardised throughout the genre.
 
-When using a keyboard and mouse, the movement of the mouse tilts and pans the camera, mapping movement along the x axis to the yaw of the camera and movement along the y axis to the pitch of the camera. Then the actual movement is handled by a standardised \gls{wasd}. Using this standardised system is helpful to allow players to easily transfer muscle memory and skills between games, but also for developers to quickly establish what the player is expecting to be able to control. Other interactive elements include: \textbf{Spacebar} for \textit{jump}, \textbf{E, TAB or I} for \textit{inventory or menu}, \textbf{ESC} for \textit{main menu or pause}, \textbf{Left click} for \textit{shoot} and \textbf{Right mouse click} for \textit{aim down sights or zoom in aim}.
-
-\begin{figure}
-    \caption{A diagram showing a standard keyboard and mouse layout for an \gls{fps} video game}
+\begin{wrapfigure}{l}{0.3\textwidth}
+    \includegraphics[width=\linewidth]{Pubg_controls.png}
+    \caption{A diagram showing a standard keyboard and mouse layout for an \gls{fps} video game. Image courtesy of \cite{ign_pubgpccontrols_2018}}
     \label{kbmControls}
-\end{figure}
+\end{wrapfigure}
+
+When using a keyboard and mouse, the movement of the mouse tilts and pans the camera, mapping movement along the x axis to the yaw of the camera and movement along the y axis to the pitch of the camera. Then the actual movement is handled by a standardised \gls{wasd}. Using this standardised system is helpful to allow players to easily transfer muscle memory and skills between games, but also for developers to quickly establish what the player is expecting to be able to control. Other interactive elements include: \textbf{Spacebar} for \textit{jump}, \textbf{E, TAB or I} for \textit{inventory or menu}, \textbf{ESC} for \textit{main menu or pause}, \textbf{Left click} for \textit{shoot} and \textbf{Right mouse click} for \textit{aim down sights or zoom in aim}.
 
 When using a controller, the left joystick generally refers to the translation of the player character (following a \gls{wasd}). While the right joystick refers to the rotation of the camera (movement on the x axis controls the yaw of the camera, while movement on the y axis controls the pitch). Other standard controls include: \textbf{Bottom circular button} for \textit{jump}, \textbf{Left circular button} for \textit{interact}, \textbf{Left trigger} for \textit{shoot}, \textbf{Right trigger} for \textit{aim down sights or zoom in} and \textbf{Central right button} for \textit{Pause menu or main menu}
 
-\begin{figure}
-    \caption{A diagram showing a standard controller layout for an \gls{fps} video game.}
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \includegraphics[width=\linewidth]{xbox-destiny-rising.jpg}
+    \caption{A diagram showing a standard controller layout for an \gls{fps} video game. Image Courtesy of \cite{aquino_destinyrisingcontroller_2025}}
     \label{controllerControls}
-\end{figure}
+\end{wrapfigure}
 
 While this is important towards the overall user experience, the specific controller layout is not what I intend to change in this game.
 
-\section{Predictable controls}
+\section{How to create controls that players already know}
 
 In most \gls{fps} games, you will use your \gls{wasd} and mouse to aim at a target, click the left mouse button and instantly fire a projectile towards the target. This is our issue. We wish for the game to allow players to customise their projectiles before they fire it. Allowing the chaos to exist truly in the \gls{bleedingedge} rather than being altered by abilities such as in Overwatch \parencite{overwatch2016} or Destiny 2 \parencite{bungie2017destiny2}.
 
@@ -413,12 +554,17 @@ In most \gls{fps} games, you will use your \gls{wasd} and mouse to aim at a targ
 
 For Honor is a melee based third person fighting game in which pre-gunpowder military units (knights, vikings, samurai, etc\dots) do battle between each other. The game is worthy of look for our intentions as it has an interesting control mechanic. To determine which way the player's weapon swings, the player must first look in the direction that it should be swung. For example, if the blade should arc down from above, the player must move their mouse or joystick up before pressing the attack button. The targetted player can then choose the same direction to counter and possibly parry the attack.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{forhonoricons-1.png}
+	\caption{A screenshot of the UI of For Honor, with arrows showing the current stances of the player and opponent. Image courtesy of \cite{gag_forhonorui_nd}}
+	\label{forhonorFig}
+\end{figure}
+
+
 While the fundamental difference in attack range between this game and \textbf{Archaos} is present, the concept of using the mouse's precise movements to control the attack is certainly interesting. It allows the player to alter their attack, however, there is still a limited amount of control that they have. The game uses what could be described as a radial control system: in which the angle is determined by setting a central point for the mouse, then getting a \gls{polar} with this central point as the origin for such. This means you are technically limited to as many options as you can fit in this circle without the player having them overlap. In a high action game such as For Honor or \textbf{Archaos}, you are even more limited as the player has little time to correct their movements. This is why For Honor only provides 3 angle \textit{options} as the player then has ample breathing room to be able to move to the option they want.
 
-\subsection{}
-
-
-\section{Waving wands}
+\section{Various Casting systems}
 
 As discussed in the lore of the game (see section \ref{lore}), the idea behind a wizard is that they are an academic. They take a scholarly approach to understanding magic. As such, the controls for the game should probably exhibit some form of learning experience, there should be a sense of discovery as to what the player can accomplish using the controls we make available. This is what motivates our intentions with this control system, the hiding of information from players, not for the sake of clarity, but for the sake of the chaos inherent in mystery.
 
@@ -426,23 +572,20 @@ In our original spell system \footnote{This is the first spell system which was 
 
 Throughout development, we developed 3 systems in which the player could cast spells. They were named: Quadrant, Radial and Vector.
 
-The Quadrant system worked by defining a cartesian work area for the mouse, which would be divided into 4 quadrants, the location of the mouse would determine where the wand's tip was in an equivalent cartesian work area on the screen. The player would then move the mouse in order to move the want, each move into a different quadrant would count as a \textit{movement} causing the spell to gain a new modifier.
-
-The Radial system worked similar to what was described in section \ref{forhonor}. A system in which a central point is defined, with a radial coordinate gathered from such. Once the radius element of the coordinate reached a required distance, the system would use the angle element to determine what modifier the spell is adding.
-
-The Vector system worked on a similar nature to the Quadrant system, however, rather than defining a 2D cartesian coordinate system, it used 2 crossing 1D coordinate systems. Movement could be horizontal or vertical, but not both. This could lead to 4 or more different possible options to add to a spell.
-
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.3\textwidth}
+	    \includegraphics[width=\linewidth]{SpellControlUI.drawio.png}
         \caption{The concept art for the ``Quadrant'' casting system}
         \label{quadrantControls}
     \end{subfigure}
     \begin{subfigure}{0.3\textwidth}
+	    \includegraphics[width=\linewidth]{SpellControlUI1.drawio.png}
         \caption{The concept art for the ``Radial'' casting system}
         \label{radialControls}
     \end{subfigure}
     \begin{subfigure}{0.3\textwidth}
+	    \includegraphics[width=\linewidth]{SpellControlUI3.drawio.png}
         \caption{The concept art for the ``Vector'' casting system}
         \label{vectorControls}
     \end{subfigure}
@@ -450,29 +593,88 @@ The Vector system worked on a similar nature to the Quadrant system, however, ra
     \label{controlSystems}
 \end{figure}
 
+The Quadrant system worked by defining a cartesian work area for the mouse, which would be divided into 4 quadrants, the location of the mouse would determine where the wand's tip was in an equivalent cartesian work area on the screen. The player would then move the mouse in order to move the want, each move into a different quadrant would count as a \textit{movement} causing the spell to gain a new modifier.
+
+The Radial system worked similar to what was described in section \ref{forhonor}. A system in which a central point is defined, with a radial coordinate gathered from such. Once the radius element of the coordinate reached a required distance, the system would use the angle element to determine what modifier the spell is adding.
+
+The Vector system worked on a similar nature to the Quadrant system, however, rather than defining a 2D cartesian coordinate system, it used 2 crossing 1D coordinate systems. Movement could be horizontal or vertical, but not both. This could lead to 4 or more different possible options to add to a spell.
+
 After playtesting, we ultimately settled on the \textit{Radial} system as this maps easily between mouse and controller joystick, is clear and easy to understand \footnote{some players reportadely struggled to understand the Vector system}. And provides an easily adjustable number of options. We simply have to divide the radial into zones for each option and map the players mouse's polar coordinate to one of the zones in the area.
+
+\chapter{Conclusion}
+
+In chapter \ref{intro}, we set out 5 clear objectives:
+
+\begin{enumerate}
+	\item A game that people consider to be fun.
+	\item A method of constructing spells that is unpredictable and chaotic without sacrificing control and fun.
+	\item Spells that are fitting into the low-poly / Voxelised style of the game.
+	\item A casting system which allows the player to control and manipulate the spells into the desired form or such that they create the desired effect.
+	\item A naturalistic map portion that is believable to be physically accurate whilst staying within the style of the game.
+\end{enumerate}
+
+Now let us consider these individually. As written in chapter \ref{chap1}, our spells use a modular system, where each control interaction allows the player to add another layer of effect to the spell. Allowing them to appear chaotic to other players, while allowing the original caster fine control over the intended outcome of the spell's casting. Furthermore, as visible in figure \ref{finalSpells}. The spells are all able to maintain this voxelised / low poly effect while maintaining clear resemblance to their elements and spell type. Looking at it, one can generally differentiate between different types of spells as well as different elements.
+
+\begin{figure}[h]
+	\centering
+	\caption{A collection of spells rendered in Unity}
+	\label{finalSpells}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{boltFire.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{rockEarth.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{iceShard.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{iceShield.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{boltAir.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{fireSpike.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{earthWall.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{iceWall.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{airWhirlwind.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{fireWhirlwind.png}
+	\end{subfigure}
+\end{figure}
+
+The spells are able to be casted with a casting system that also fits graphically into this style. But allows the players to visually identify what they are casting and control it to some effect.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{CastingWall.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{AirRockCasting.png}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\linewidth]{spellCasting.png}
+	\end{subfigure}
+	\caption{A series of symbols created within the casting UI}
+	\label{finalUI}
+\end{figure}
+
+Most importantly, we have a game that, according to our user-reported statistics: \textbf{is fun to play}.
 
 \printbibliography
 
 \appendix
 
 \chapter{Spell Tables}
-
-\begin{table}[H]
-    \begin{tabular}{|c|c|c|c|c|}
-        \hline
-                               & Fire        & Ice        & Earth      & Air       \\
-        \hline
-        Small Projectile Spell & Firebolt    & Ice Spike  & \{None\}   & Push      \\
-        Large Projectile Spell & Fire ball   & \{None\}   & Rock Throw & \{None\}  \\
-        Building Spell         & Fire Path   & Ice Pillar & Rock Wall  & Whirlwind \\
-        Shield Spell           & Fire Shield & \{None\}   & \{None\}   & Deflect   \\
-        Self Afflicting Spell  & \{None\}    & Freeze     & Petrify    & Push Self \\
-        \hline
-    \end{tabular}
-    \caption{A table of spells built by cross-referencing common functionality and archetype (section \ref{spellType}) against spell elements (section \ref{elements})}
-    \label{spellTable}
-\end{table}
 
 \begin{table}
     \begin{tabular}{|c|c|c|c|c|}
