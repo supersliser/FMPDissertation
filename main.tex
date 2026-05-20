@@ -601,7 +601,7 @@ The Vector system worked on a similar nature to the Quadrant system, however, ra
 
 After playtesting, we ultimately settled on the \textit{Radial} system as this maps easily between mouse and controller joystick, is clear and easy to understand \footnote{some players reportadely struggled to understand the Vector system}. And provides an easily adjustable number of options. We simply have to divide the radial into zones for each option and map the players mouse's polar coordinate to one of the zones in the area.
 
-\chapter{Conclusion}
+\chapter{Feedback \& Conclusion}
 
 In chapter \ref{intro}, we set out 5 clear objectives:
 
@@ -613,9 +613,94 @@ In chapter \ref{intro}, we set out 5 clear objectives:
 	\item A naturalistic map portion that is believable to be physically accurate whilst staying within the style of the game.
 \end{enumerate}
 
-Now let us consider these individually. As written in chapter \ref{chap1}, our spells use a modular system, where each control interaction allows the player to add another layer of effect to the spell. Allowing them to appear chaotic to other players, while allowing the original caster fine control over the intended outcome of the spell's casting. Furthermore, as visible in figure \ref{finalSpells}. The spells are all able to maintain this voxelised / low poly effect while maintaining clear resemblance to their elements and spell type. Looking at it, one can generally differentiate between different types of spells as well as different elements.
+\section{Spell gameplay and philosophy}
 
-\begin{figure}[h]
+As written in chapter \ref{chap1}, our spells use a modular system, where each control interaction allows the player to add another layer of effect to the spell. Allowing them to appear chaotic to other players, while allowing the original caster fine control over the intended outcome of the spell's casting.
+
+\begin{table}[H]
+\centering
+\caption{Individual User Feedback: Gameplay \& Strategies}
+\label{tab:gameplay1}
+\begin{tabular}{p{0.05\linewidth} p{0.45\linewidth} p{0.45\linewidth}}
+\hline
+\textbf{User} & \textbf{Main Strategies Employed} & \textbf{Most Enjoyed Gameplay Element} \\
+\hline
+1 & Flanking and ambush in high traffic areas & The chaos of having multiple people fighting each other \\
+2 & Area denial and controlling choke points & The chaos of just things going flying \\
+3 & Keeping distance and utilizing lines of sight & Fast paced action \\
+4 & Hit and run tactics & The spell fighting \\
+5 & Exploring the map to find good angles & Map exploration \\
+6 & Sticking with the team and grouped attacks & I enjoyed the chaos of all learning together \\
+7 & Using dash to evade and counter-attack & Picking spells and fast maneuvering \\
+8 & Rushing the center zone / hot zones & Chaotic play \\
+9 & High-speed movement through corridors & How fast everyone was going. I like high speed shooters. \\
+10 & Ambushing enemy players & The teams chucking spells down corridors at one another \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Quantitative Summary: Gameplay Experience (Scale 1-5)}
+\label{tab:gameplay2}
+\begin{tabular}{l c}
+\hline
+\textbf{Metric} & \textbf{Average Score (n=10)} \\
+\hline
+Game was easy to play & 3.3 \\
+Learned to play quickly & 4.1 \\
+Perceived as Competitive (vs. Casual) & 3.3 \\
+\hline
+\end{tabular}
+\end{table}
+
+Within table \ref{tab:gameplay1}, we can see clear and constant mention of chaos and a chaotic environment throughout gameplay. This was our direct intention. Yet, despite this, all players were able to pinpoint specific strategies and tactics they used to improve their performance within the gameplay. Furthermore the statistics in table \ref{tab:gameplay2} show that which would be expected from a game that features such chaotic control. The first statistic shows that the game had a level of difficulty, it was not as simple as point and shoot, such being the philosophy behind this gameplay mechanic. However, players appear to report that they are able to understand the game quite quickly and develop tactics and strategies to play better and better utilise the chaos of the game to their advantage. Overall this shows that the chaos of the game can be controlled, and that the unpredictability of other players does not decrease ones own enjoyment. Thus, the goal for "A method of constructing spells that is unpredictable and chaotic without sacrificing control and fun", should be considered a strong \textbf{success}.
+
+\section{Spell Visuals}
+
+As visible in figure \ref{finalSpells}, the spells are all able to maintain this voxelised / low poly effect while maintaining clear resemblance to their elements and spell type. Looking at it, one can generally differentiate between different types of spells as well as different elements. This is achieved through the use of repeated colours and shapes that are distinct to a specific element and spell type. Therefore providing clear differences to help distinguish between different spells.
+
+\begin{table}[H]
+\centering
+\caption{Individual User Feedback: Spell Visuals \& Distinguishability}
+\label{tab:spells1}
+\begin{tabular}{p{0.05\linewidth} p{0.35\linewidth} p{0.5\linewidth}}
+\hline
+\textbf{User} & \textbf{Spells Gravitated Towards} & \textbf{Visual Clarity \& Distinguishability Notes} \\
+\hline
+1 & Fire spike, ice spike and fire tornado & Mentioned needing to figure out what the different logos mean; spell overlap causes high visual chaos. \\
+2 & Tornado, any element & Enjoyed the visual chaos of spells flying, but requested damage indicators to clarify where hits are actually coming from. \\
+3 & Fire tornado & Good visual pacing in combat, but needed clearer visual indicators for aiming. \\
+4 & Ice Spike & Found the spell fighting visuals clear and distinct enough to track. \\
+5 & The standard fire damage ball and light wall & Identified spells heavily by UI placement (e.g., "top right"); suggested making casting cursors more obvious. \\
+6 & Fireball! & Found the fireball visuals distinct and enjoyable amidst the screen chaos. \\
+7 & Fireball and air dash & Clear in-game elemental effects, but noted UI color inconsistency (air symbol yellow but corner is green) causing confusion. \\
+8 & Fire tornado & High visual chaos; requested more distinct particle effects to help differentiate the magic being cast. \\
+9 & Fire tornado & High speed visuals were fun, but wanted clearer color-coding on spell UI areas to match the spells. \\
+10 & Fire and ice tornados & Colorful clashes in corridors, but specifically requested clearer spell images to deter confusion of what each spell is. \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Quantitative Summary: Visual Distinguishability \& Preferences}
+\label{tab:spells2}
+\begin{tabular}{l c}
+\hline
+\textbf{Visual / Clarity Metric} & \textbf{Result (n=10)} \\
+\hline
+Requested clearer spell icons / UI indicators & 60\% (6 users) \\
+Noted visual "chaos" during spell combat & 70\% (7 users) \\
+Players noting UI color/logo confusion with spells & 40\% (4 users) \\
+Most distinctly preferred spells & Fire Tornado (6), Fireball (3) \\
+\hline
+\end{tabular}
+\end{table}
+
+The feedback in table \ref{tab:spells1}, as well as the final row of table \ref{tab:spells2}, suggest that the fire tornado is clearly the most visually distinct, most likely due to a combination with its high speed animation, direct gameplay application and bright red colour (this spell is visible in figure \ref{fireWhirlwind}). Other players also noted enjoying the visuals of the fireball and multiple elements of the spike spell. Something worthy of clear note here is that the players are able to distinguish the spells for the purpose of filling out this servey, suggesting clear distinguishability of spells. While this distinguishability is good, it is worth noting th efeeback from user 5 in table \ref{tab:spells1}. The player speaks of a "light wall", even though there is no light element. It is most likely that they are referring to the "air wall". As such, while players are able to distinguish spells from one another, ascertaining the true meaning behind spells is another matter, one which has not been completed to the same standard. However, arguably the most important factor: the final column of table \ref{tab:spells1} shows general positive sentiment towards the "look and feel" of the spells. Therefore, it is reasonable to assume that players feel the theme and design of the spells fits the themes of the larger game. Therefore, it is fair to state that the intention of creating "Spells that are fitting into the low-poly / Voxelised style of the game" can be considered a \textbf{success}.
+
+\begin{figure}[H]
 	\centering
 	\caption{A collection of spells rendered in Unity}
 	\label{finalSpells}
@@ -648,12 +733,54 @@ Now let us consider these individually. As written in chapter \ref{chap1}, our s
 	\end{subfigure}
 	\begin{subfigure}{0.3\textwidth}
 		\includegraphics[width=\linewidth]{fireWhirlwind.png}
+		\caption{}
+		\label{fireWhirlwind}
 	\end{subfigure}
 \end{figure}
 
-The spells are able to be casted with a casting system that also fits graphically into this style. But allows the players to visually identify what they are casting and control it to some effect.
+\section{Casting System and Controls}
 
-\begin{figure}[H]
+The spells are able to be casted with a casting system that also fits graphically into this style. But allows the players to visually identify what they are casting and control it. The use of particles keeps the appearance similar to that of other spells, namely bolts and shields. The use of lines to create what can appear to be a \textit{rune-like pattern} helps the visual style to fit into the controls as well as provide clear feedback to the current state of casting.
+
+\begin{table}[h]
+\centering
+\caption{Individual User Feedback: Casting System \& UI}
+\label{tab:controls1}
+\begin{tabular}{p{0.05\linewidth} p{0.45\linewidth} p{0.45\linewidth}}
+\hline
+\textbf{User} & \textbf{Opinion on Spell System \& Learning Curve} & \textbf{UI \& Control Improvements} \\
+\hline
+1 & Overall felt good, just need to figure out the logos. & Add some feedback on what you've chosen \\
+2 & Fun but a bit janky. Curve is high at first but makes sense quickly. & Damage indicator to show where you are being hit from \\
+3 & Well done but needs better aiming. Easy to figure out. & Clearer, better icons for spell casting \\
+4 & It was very fun. Easy learning curve. & Make the spell cursor easier to see \\
+5 & Good base, but a bit too slow. Fine curve. & Allow turning while casting; make mouse cursor more obvious \\
+6 & Instructions clear but struggled with mouse movement. & Make it clearer what you are selecting \\
+7 & Good. Not too steep, pretty easy to pick up. & Slow down movement while casting; fix air symbol color bug \\
+8 & Okay at best, not intuitive. & Keybinds instead of forced mouse usage; entire UI rework \\
+9 & Cool concept but difficult. You get used to it over time. & Colour areas where the mouse is; smoother UI curves \\
+10 & Cool but steep learning curve with too much off the bat. & Change selection to numbers (mouse aiming/selecting overlap is tough) \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Quantitative Summary: System, Controls \& UI (Scale 1-5)}
+\label{tab:controls2}
+\begin{tabular}{l c}
+\hline
+\textbf{Metric} & \textbf{Average Score (n=10)} \\
+\hline
+Spell system was too complex & 2.9 \\
+UI is user friendly & 2.9 \\
+I can play without written instructions & 2.9 \\
+Various functions in the spell system were well integrated & 3.6 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
 	\centering
 	\begin{subfigure}{0.3\textwidth}
 		\includegraphics[width=\linewidth]{CastingWall.png}
@@ -668,13 +795,104 @@ The spells are able to be casted with a casting system that also fits graphicall
 	\label{finalUI}
 \end{figure}
 
-Most importantly, we have a game that, according to our user-reported statistics: \textbf{is fun to play}.
+The feedback in table \ref{tab:controls1} shows that the casting controls are somewhat confusing, most players were able to figure it out eventually but took more effort than they were able to easily put in. This is reflected in the metrics in table \ref{tab:controls2}. User 10 provides an interesting point of feedback with "too much off the bat". As such, it is entirely possible that too much control is appearing to be counterproductive. This is an interesting point of evaluation as it suggests that there is another factor to the reasoning behind the use of randomness and chaos in games. By randomising certain factors, players do not need to choose them and thus the feature is abstracted from the user's controls. Making the game overall easier to play.
+
+Overall, the objective was to "A casting system which allows the player to control and manipulate the spells into the desired form or such that they create the desired effect". While we consider this to be a \textbf{success}, it leaves a larger question of whether this goal was itself correct. It appears that providing the player with complete control is infact overwhelming, and not something that can be easily displayed on the UI, at least in such a way that it can be easily digested in the speed required for a fast and chaotic \gls{fps} shooter.
+
+\section{Map design \& visuals}
+
+Overall, we consider the map to be very successful. It is able to blend the natural and man-made sections of the map well. And provides plenty of tactical considerations by allowing players to travel to different parts of the map for different advantages.
+
+\begin{table}[hp]
+\centering
+\caption{Individual User Feedback: Map Design \& Environment}
+\label{tab:map1}
+\begin{tabular}{p{0.05\linewidth} p{0.3\linewidth} p{0.3\linewidth} p{0.3\linewidth}}
+\hline
+\textbf{User} & \textbf{Map Aesthetic} & \textbf{Lighting Improvements} & \textbf{Encourages Conflict? (Reason)} \\
+\hline
+1 & Felt like a wizard school & Some areas had bugged lighting & Yes (Had funnel points and areas of most traffic) \\
+2 & Very wizard like & Dimmer and lighter areas, where the spells would light it up? & Yes (Good variety in tight corridors into larger rooms) \\
+3 & Very good & Brighter colours in mineshaft crystal area & Yes (Long corridors and easy to see enemies) \\
+4 & It was very fitting & Lighting felt good & Yes \\
+5 & I like it overall, it can be a bit harsh... & change some of the colours there? & No (There are too many enclosed tunnels and too much space...) \\
+6 & very fun & good & Yes (lots of turns and meeting points to hide in) \\
+7 & Nice, ice cavern with all the spikes was my fave & Maybe make wizard give off light from wand... & Yes (Tight corridors, and lots of lines of sight...) \\
+8 & I liked the low poly & I would like particle effects & Yes (There is an obvious hot zone for fighting) \\
+9 & I really liked it, very original. & The lighting was good. & Yes (Each corridor connects to the other side...) \\
+10 & awesome look to the game & more depth with shadows & Yes (wide variety of spaces in the map...) \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[hp]
+\centering
+\caption{Quantitative Summary: Map Design}
+\label{tab:map2}
+\begin{tabular}{l c}
+\hline
+\textbf{Metric} & \textbf{Result (out of 10)} \\
+\hline
+Agreed Map Encourages Conflict & 9 \\
+Felt Game Goals Were Clear & 9 \\
+\hline
+\end{tabular}
+\end{table}
+
+According to user feedback in tables \ref{tab:map1} and \ref{tab:map2}, the players overall enjoyed the map, and most were with the lighting and shadows. While these are important for the visuals of the game, they ultimately do not contribute to the gameplay - the predominant feature for determining \textit{fun} within the game. Within the final column of table \ref{tab:map1}, as well as the first row of table \ref{tab:map2}. It was overwhelmingly felt that the map actively contributes to fun gameplay by providing tactical advantage and multiple points for different types of combat.
+
+Ultimately, the goal for the map was "A naturalistic map portion that is believable to be physically accurate whilst staying within the style of the game". Ultimately, this can be considered a \textbf{success} given the user responses.
+
+\section{Is it fun?}
+
+This question was asked to us by our supervisor at every moment. The most vital consideration in game development is whether all aspects of the game compile to make the game fun. To put it simply: \textbf{Is it fun?}
+
+\begin{table}[h]
+\centering
+\caption{Individual User Feedback: Overall Feeling \& Aesthetic}
+\label{tab:fun1}
+\begin{tabular}{p{0.05\linewidth} p{0.45\linewidth} p{0.45\linewidth}}
+\hline
+\textbf{User} & \textbf{Map Visuals Invoke} & \textbf{Overall Opinion of Game} \\
+\hline
+1 & Made me feel like i was a wizard & Very good, would spend money to play the game \\
+2 & Mystical but also kinda silly, like how wizards would just have random things & It was fun, like really fun \\
+3 & Fantasy dungeon & Pretty good \\
+4 & Mystery & It was fun \\
+5 & It has a good feeling, a modern indie-style take on early 2000's arena shooters. & It's got some good features and bones, but seems confused between a slower shooter... \\
+6 & DND and other fantasy adventure vibes & it was fun! I am not good at playing games so i found it hard... \\
+7 & Cold and mystical. All the purple lighting was good & Good I liked \\
+8 & Mish-mashed & A good demo \\
+9 & It was like an old game. Very nostalgic and fun. & I see the vision and I think it's cool but it needs polishing before it can be released. \\
+10 & nostalgia & Really cool aesthetic and concept for the game \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Quantitative Summary: Game Reception (Scale 1-5)}
+\label{tab:fun2}
+\begin{tabular}{l c}
+\hline
+\textbf{Metric} & \textbf{Average Score (n=10)} \\
+\hline
+Would play the game again & 3.9 \\
+Would recommend to a friend & 3.6 \\
+Would buy on Steam & 3.1 \\
+\hline
+\end{tabular}
+\end{table}
+
+Table \ref{tab:fun1} shows that ultimately the game is enjoyable, but most players are aware that it is limited in a "demo" state that it is in now. Thus, they are more referring to the \textit{potential} of the game, rather than the game itself. Despite that, it would be difficult for them to imagine the game being fun if it was not fun at this very moment. As such the statistics present suggest that ultimately the intention of making "A game that people consider to be fun" is a \textbf{success}.
 
 \printbibliography
 
 \appendix
 
 \chapter{Spell Tables}
+
+\section{Spell Colours}
 
 \begin{table}
     \begin{tabular}{|c|c|c|c|c|}
@@ -713,9 +931,17 @@ Most importantly, we have a game that, according to our user-reported statistics
     \item Target Type: The type of basic category of spell:
           \begin{itemize}
               \item Projectile
+		\item Structure
               \item Shield
               \item Self
           \end{itemize}
+	\item Structure Type: The mesh and default parameters for the spell:
+		\begin{itemize}
+			\item Wall
+			\item Whirlwind
+			\item Spike
+			\item Field
+		\end{itemize}
 \end{itemize}
 
 \begin{table}
@@ -723,17 +949,17 @@ Most importantly, we have a game that, according to our user-reported statistics
         \hline
                             & Beam & Bolt & Shard & Rock  \\
         \hline
-        Speed               & 1    & 15   & 25    & 12    \\
-        Range               & 10   & 40   & 80    & 25    \\
-        Affliction Strength & 10   & 5    & 5     & 0     \\
-        Affliction Length   & 5    & 10   & 2     & 0     \\
-        Hit Damage          & 20   & 10   & 35    & 30    \\
-        Explosion Size      & 0    & 2    & 0     & 3     \\
-        Explosion Damage    & 0    & 0    & 0     & 5     \\
-        Explosion Force     & 200  & 5000 & 1000  & 20000 \\
+        Speed               & 5    & 1   & 5    & 0.75    \\
+        Range               & 7    & 25   & 80    & 12.5    \\
+        Affliction Strength & 50   & 30    & 5     & 5     \\
+        Affliction Length   & 2    & 5   & 10     & 10     \\
+        Hit Damage          & 5   & 14   & 0    & 20    \\
+        Explosion Size      & 2    & 2    & 0     & 20     \\
+        Explosion Damage    & 0    & 1    & 0     & 5     \\
+        Explosion Force     & 10000  & 200 & 0  & 40000 \\
         \hline
     \end{tabular}
-    \caption{Spell variable default values by spell's projectile type}
+    \caption{Spell variable default multipliers by spell's projectile type}
 \end{table}
 
 \begin{table}[H]
@@ -741,17 +967,17 @@ Most importantly, we have a game that, according to our user-reported statistics
         \hline
                             & Fire & Ice  & Earth & Air  \\
         \hline
-        Speed               & 1x   & 2x   & 0.5x  & 3x   \\
-        Range               & 0.5x & 1.5x & 1.2x  & 2x   \\
-        Affliction Strength & 0.8x & 0.2x & 0x    & 1.2x \\
-        Affliction Length   & 1.1x & 0.8x & 0x    & 1.2x \\
-        Hit Damage          & 0.8x & 2x   & 1.5x  & 0.2x \\
-        Explosion Size      & 1x   & 0.5x & 0.2x  & 2x   \\
-        Explosion Damage    & 1.8x & 0.2x & 1.5x  & 0.5x \\
-        Explosion Force     & 0.8x & 0.5x & 2x    & 10x  \\
+        Speed               & 10  & 20   & 5  & 30   \\
+        Range               & 0.5 & 1.5  & 1.2  & 2   \\
+        Affliction Strength & 2.5 & 1    & 10    & 2 \\
+        Affliction Length   & 1.1 & 0.8  & 5    & 1 \\
+        Hit Damage          & 1   & 1.8  & 1.5  & 0.5 \\
+        Explosion Size      & 1   & 0.5  & 0.2  & 2   \\
+        Explosion Damage    & 1.8 & 0.2  & 1.5  & 0.5 \\
+        Explosion Force     & 0.8 & 0.5  & 1    & 1.75  \\
         \hline
     \end{tabular}
-    \caption{A table showing the modifiers applied to each variable value when an element is applied to a spell. Where x is the original default value}
+    \caption{A table showing the default values for each element}
     \label{spellElementVariables}
 \end{table}
 
